@@ -13,21 +13,21 @@ int main() {
     cin >> answer;
 
     string str = "";
-    
-    switch (answer){
-        case 0:
-            cout << "Введите имя файла: ";
-            cin >> str;
-            break;
-        case 1:
-            str = "Lyis.txt";
-            break;
-        case 2:
-            str = "MBCode.txt";
-            break;
-        case 3:
-            str = "CodeWErr.txt";
-            break;
+
+    switch (answer) {
+    case 0:
+        cout << "Введите имя файла: ";
+        cin >> str;
+        break;
+    case 1:
+        str = "Lyis.txt";
+        break;
+    case 2:
+        str = "MBCode.txt";
+        break;
+    case 3:
+        str = "CodeWErr.txt";
+        break;
     default:
         cout << "Такого варианта нет!\n";
         return 1;
