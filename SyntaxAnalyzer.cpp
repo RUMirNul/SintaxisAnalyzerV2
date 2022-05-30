@@ -1,6 +1,6 @@
 ﻿#include <iomanip>
 #include "SyntaxAnalyzer.h"
-//ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
+
 SyntaxAnalyzer::SyntaxAnalyzer() {
     stk.push(18);
     stk.push(1);

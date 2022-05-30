@@ -1,6 +1,5 @@
 ﻿#include "SyntaxAnalyzer.h"
-//Основа дл генератора кода
-//ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
+//Основа для генератора кода
 class Generator : public SyntaxAnalyzer {
 public:
     //Запуск генератора кода

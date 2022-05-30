@@ -1,7 +1,7 @@
 ﻿#include <windows.h>
 
 #include "Generator.h"
-//ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
+
 using namespace std;
 
 int main() {

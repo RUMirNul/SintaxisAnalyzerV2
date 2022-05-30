@@ -1,7 +1,6 @@
 ﻿#include <stack>
 #include "LexicalAnalyzer.h"
-////ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
-//ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
+
 using namespace std;
 class SyntaxAnalyzer : public LexicalAnalyzer {
 private:

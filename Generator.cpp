@@ -1,5 +1,5 @@
 ﻿#include "Generator.h"
-//ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
+
 void Generator::Start(char* nameIn) {
     SyntaxAnalyzer::Start(nameIn);
     if (flagErr) {

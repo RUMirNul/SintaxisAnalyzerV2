@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
-//ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
+
 using namespace std;
 
 class LexicalAnalyzer {
