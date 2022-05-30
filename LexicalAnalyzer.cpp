@@ -1,5 +1,5 @@
-#include "LexicalAnalyzer.h"
-
+﻿#include "LexicalAnalyzer.h"
+//ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
 LexicalAnalyzer::LexicalAnalyzer() : InitialVector(26), Table(26), TL(512), TS(512),
 ferr("Errors.txt") {
     for (int i = 1; i <= 1024; i++)

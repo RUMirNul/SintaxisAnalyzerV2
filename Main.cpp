@@ -1,7 +1,7 @@
 ﻿#include <windows.h>
 
 #include "Generator.h"
-
+//ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
 using namespace std;
 
 int main() {
@@ -32,7 +32,6 @@ int main() {
         cout << "Такого варианта нет!\n";
         return 1;
     }
-    //ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
     int n = str.length();
     char* name = &str[0];
     gen.Start(name);

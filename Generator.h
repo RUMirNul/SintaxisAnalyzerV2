@@ -1,8 +1,9 @@
-#include "SyntaxAnalyzer.h"
-//Основа дл генератора кода
+п»ї#include "SyntaxAnalyzer.h"
+//РћСЃРЅРѕРІР° РґР» РіРµРЅРµСЂР°С‚РѕСЂР° РєРѕРґР°
+//РўРћР›Р¬РљРћ Р”Р›РЇ РљРћР”РР РћР’РљР // РЈР”РђР›РРўР¬
 class Generator : public SyntaxAnalyzer {
 public:
-    //Запуск генератора кода
+    //Р—Р°РїСѓСЃРє РіРµРЅРµСЂР°С‚РѕСЂР° РєРѕРґР°
     void Start(char*);
 };
 

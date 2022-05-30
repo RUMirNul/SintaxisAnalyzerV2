@@ -1,6 +1,6 @@
-#include <iomanip>
+Ôªø#include <iomanip>
 #include "SyntaxAnalyzer.h"
-
+//–¢–û–õ–¨–ö–û –î–õ–Ø –ö–û–î–ò–†–û–í–ö–ò // –£–î–ê–õ–ò–¢–¨
 SyntaxAnalyzer::SyntaxAnalyzer() {
     stk.push(18);
     stk.push(1);
@@ -10,14 +10,14 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     flagErr = false;
 
 
-    //—ÚÓÍ‡ 1
+    //–°—Ç—Ä–æ–∫–∞ 1
     T[1][1] = &SyntaxAnalyzer::F1;
     for (int i = 2; i < 22; i++)
         T[1][i] = &SyntaxAnalyzer::A;
     T[1][22] = &SyntaxAnalyzer::C;
     T[1][23] = &SyntaxAnalyzer::T1;
 
-    //—ÚÓÍ‡ 2
+    //–°—Ç—Ä–æ–∫–∞ 2
     T[2][1] = &SyntaxAnalyzer::F3;
     T[2][2] = &SyntaxAnalyzer::B;
     T[2][3] = &SyntaxAnalyzer::B;
@@ -42,7 +42,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[2][22] = &SyntaxAnalyzer::C;
     T[2][23] = &SyntaxAnalyzer::T2;
 
-    //—ÚÓÍ‡ 3
+    //–°—Ç—Ä–æ–∫–∞ 3
     T[3][1] = &SyntaxAnalyzer::F11;
     for (int i = 2; i < 22; i++)
         T[3][i] = &SyntaxAnalyzer::G1;
@@ -52,7 +52,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[3][22] = &SyntaxAnalyzer::C;
     T[3][23] = &SyntaxAnalyzer::T2;
 
-    //—ÚÓÍ‡ 4
+    //–°—Ç—Ä–æ–∫–∞ 4
     T[4][1] = &SyntaxAnalyzer::F13;
     for (int i = 2; i < 22; i++)
         T[4][i] = &SyntaxAnalyzer::D;
@@ -60,7 +60,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[4][22] = &SyntaxAnalyzer::C;
     T[4][23] = &SyntaxAnalyzer::T2;
 
-    //—ÚÓÍ‡ 5
+    //–°—Ç—Ä–æ–∫–∞ 5
     T[5][1] = &SyntaxAnalyzer::K2;
     T[5][2] = &SyntaxAnalyzer::F14;
     T[5][3] = &SyntaxAnalyzer::K1;
@@ -85,7 +85,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[5][22] = &SyntaxAnalyzer::C;
     T[5][23] = &SyntaxAnalyzer::T3;
 
-    //—ÚÓÍ‡ 6
+    //–°—Ç—Ä–æ–∫–∞ 6
     T[6][1] = &SyntaxAnalyzer::K2;
     T[6][2] = &SyntaxAnalyzer::F20;
     T[6][3] = &SyntaxAnalyzer::K1;
@@ -110,7 +110,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[6][22] = &SyntaxAnalyzer::C;
     T[6][23] = &SyntaxAnalyzer::T3;
 
-    //—ÚÓÍ‡ 7
+    //–°—Ç—Ä–æ–∫–∞ 7
     T[7][1] = &SyntaxAnalyzer::K2;
     T[7][2] = &SyntaxAnalyzer::F24;
     T[7][3] = &SyntaxAnalyzer::K1;
@@ -135,7 +135,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[7][22] = &SyntaxAnalyzer::C;
     T[7][23] = &SyntaxAnalyzer::T3;
 
-    //—ÚÓÍ‡ 8
+    //–°—Ç—Ä–æ–∫–∞ 8
     T[8][1] = &SyntaxAnalyzer::K2;
     T[8][2] = &SyntaxAnalyzer::F28;
     T[8][3] = &SyntaxAnalyzer::K1;
@@ -160,7 +160,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[8][22] = &SyntaxAnalyzer::C;
     T[8][23] = &SyntaxAnalyzer::T3;
 
-    //—ÚÓÍ‡ 9
+    //–°—Ç—Ä–æ–∫–∞ 9
     T[9][1] = &SyntaxAnalyzer::F19;
     T[9][2] = &SyntaxAnalyzer::K7;
     T[9][3] = &SyntaxAnalyzer::F19;
@@ -185,7 +185,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[9][22] = &SyntaxAnalyzer::O;
     T[9][23] = &SyntaxAnalyzer::O;
 
-    //—ÚÓÍ‡ 10
+    //–°—Ç—Ä–æ–∫–∞ 10
     T[10][1] = &SyntaxAnalyzer::F23;
     T[10][2] = &SyntaxAnalyzer::K7;
     T[10][3] = &SyntaxAnalyzer::F23;
@@ -210,7 +210,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[10][22] = &SyntaxAnalyzer::O;
     T[10][23] = &SyntaxAnalyzer::O;
 
-    //—ÚÓÍ‡ 11
+    //–°—Ç—Ä–æ–∫–∞ 11
     T[11][1] = &SyntaxAnalyzer::F26;
     T[11][2] = &SyntaxAnalyzer::K7;
     T[11][3] = &SyntaxAnalyzer::F26;
@@ -235,7 +235,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[11][22] = &SyntaxAnalyzer::C;
     T[11][23] = &SyntaxAnalyzer::T2;
 
-    //—ÚÓÍ‡ 12
+    //–°—Ç—Ä–æ–∫–∞ 12
     T[12][1] = &SyntaxAnalyzer::E2;
     for (int i = 2; i < 22; i++)
         T[12][i] = &SyntaxAnalyzer::E1;
@@ -245,14 +245,14 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[12][22] = &SyntaxAnalyzer::C;
     T[12][23] = &SyntaxAnalyzer::T2;
 
-    //—ÚÓÍ‡ 13
+    //–°—Ç—Ä–æ–∫–∞ 13
     for (int i = 1; i < 24; i++)
         T[13][i] = &SyntaxAnalyzer::O;
     T[13][4] = &SyntaxAnalyzer::b;
     T[13][16] = &SyntaxAnalyzer::next;
     T[13][13] = &SyntaxAnalyzer::L;
 
-    //—ÚÓÍ‡ 14
+    //–°—Ç—Ä–æ–∫–∞ 14
     T[14][1] = &SyntaxAnalyzer::M2;
     for (int i = 2; i < 22; i++)
         T[14][i] = &SyntaxAnalyzer::M1;
@@ -263,7 +263,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[14][22] = &SyntaxAnalyzer::c;
     T[14][23] = &SyntaxAnalyzer::T3;
 
-    //—ÚÓÍ‡ 15
+    //–°—Ç—Ä–æ–∫–∞ 15
     T[15][1] = &SyntaxAnalyzer::H2;
     for (int i = 2; i < 22; i++)
         T[15][i] = &SyntaxAnalyzer::H1;
@@ -272,14 +272,14 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[15][22] = &SyntaxAnalyzer::c;
     T[15][23] = &SyntaxAnalyzer::T3;
 
-    //—ÚÓÍ‡ 16
+    //–°—Ç—Ä–æ–∫–∞ 16
     for (int i = 1; i < 24; i++)
         T[16][i] = &SyntaxAnalyzer::O;
     T[16][4] = &SyntaxAnalyzer::K;
     T[16][13] = &SyntaxAnalyzer::a;
     T[16][16] = &SyntaxAnalyzer::next;
 
-    //—ÚÓÍ‡ 17
+    //–°—Ç—Ä–æ–∫–∞ 17
     T[17][1] = &SyntaxAnalyzer::P2;
     for (int i = 2; i < 22; i++)
         T[17][i] = &SyntaxAnalyzer::P1;
@@ -290,7 +290,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
     T[17][22] = &SyntaxAnalyzer::c;
     T[17][23] = &SyntaxAnalyzer::T3;
 
-    //—ÚÓÍ‡ 18
+    //–°—Ç—Ä–æ–∫–∞ 18
     for (int i = 1; i < 23; i++)
         T[18][i] = &SyntaxAnalyzer::P;
     T[18][16] = &SyntaxAnalyzer::next;
@@ -299,7 +299,7 @@ SyntaxAnalyzer::SyntaxAnalyzer() {
 
 
 void SyntaxAnalyzer::error(string errMsg) {
-    cout << "Œÿ»¡ ¿: —ÚÓÍ‡ " << num_str << ' ' << errMsg << "\n";
+    cout << "–û–®–ò–ë–ö–ê: –°—Ç—Ä–æ–∫–∞ " << num_str << ' ' << errMsg << "\n";
     flagErr = true;
     if (TL[in].TokenClass == 23) {
         in++;
@@ -332,28 +332,28 @@ void SyntaxAnalyzer::createAtom(int type, int atr1 = -1, int atr2 = -1, int atr3
 void SyntaxAnalyzer::printTA() {
     ofstream fout("TableAtoms.txt");
     if (!fout) {
-        cout << endl << "ÕÂ Û‰‡∏ÚÒˇ ÒÓı‡ÌËÚ¸ Ú‡·ÎËˆÛ ‡ÚÓÏÓ‚." << endl;
+        cout << endl << "–ù–µ —É–¥–∞—ë—Ç—Å—è —Å–æ—Ö—Ä–∞–Ω–∏—Ç—å —Ç–∞–±–ª–∏—Ü—É –∞—Ç–æ–º–æ–≤." << endl;
         return;
     }
     string types[18];
-    types[0] = "Œ ŒÕ◊¿Õ»≈";
-    types[1] = "ÕŒÃ—“–Œ ";
-    types[2] = "œ–»—¬";
-    types[3] = "œ≈–≈’Œƒ";
-    types[4] = "’–¿Õ œ≈–≈’Œƒ";
-    types[5] = "¬Œ«¬–œ≈–≈’Œƒ";
-    types[6] = "”—Àœ≈–≈’Œƒ";
-    types[7] = "’–¿Õ≈Õ»≈";
-    types[8] = "Ã≈“ ¿";
-    types[9] = "œ–Œ¬≈– ¿";
-    types[10] = "”¬≈À»◊";
-    types[11] = "—ÀŒ∆";
-    types[12] = "¬€◊»“";
-    types[13] = "”ÃÕŒ∆";
-    types[14] = "ƒ≈À≈Õ";
-    types[15] = "› —œ";
-    types[16] = "œÀﬁ—";
-    types[17] = "Ã»Õ”—";
+    types[0] = "–û–ö–û–ù–ß–ê–ù–ò–ï";
+    types[1] = "–ù–û–ú–°–¢–†–û–ö";
+    types[2] = "–ü–†–ò–°–í";
+    types[3] = "–ü–ï–†–ï–•–û–î";
+    types[4] = "–•–†–ê–ù –ü–ï–†–ï–•–û–î";
+    types[5] = "–í–û–ó–í–†–ü–ï–†–ï–•–û–î";
+    types[6] = "–£–°–õ–ü–ï–†–ï–•–û–î";
+    types[7] = "–•–†–ê–ù–ï–ù–ò–ï";
+    types[8] = "–ú–ï–¢–ö–ê";
+    types[9] = "–ü–†–û–í–ï–†–ö–ê";
+    types[10] = "–£–í–ï–õ–ò–ß";
+    types[11] = "–°–õ–û–ñ";
+    types[12] = "–í–´–ß–ò–¢";
+    types[13] = "–£–ú–ù–û–ñ";
+    types[14] = "–î–ï–õ–ï–ù";
+    types[15] = "–≠–ö–°–ü";
+    types[16] = "–ü–õ–Æ–°";
+    types[17] = "–ú–ò–ù–£–°";
     for (int i = 0; i < NTA; i++) {
         fout << setw(15) << types[TA[i].type - 1] << " " << setw(3) << TA[i].atr1 << " "
             << setw(3) << TA[i].atr2 << " " << setw(3) << TA[i].atr3 << " "
@@ -848,7 +848,7 @@ void SyntaxAnalyzer::i() {
     k2 = stk.top();
     stk.pop();
     if (k1 != k2)
-        error("œÂÂÏÂÌÌ‡ˇ ‚ next-ÓÔÂ‡ÚÓÂ ÓÚÎË˜Ì‡ ÓÚ ÔÂÂÏÂÌÌÓÈ for-ÓÔÂ‡ÚÓ‡.");
+        error("–ü–µ—Ä–µ–º–µ–Ω–Ω–∞—è –≤ next-–æ–ø–µ—Ä–∞—Ç–æ—Ä–µ –æ—Ç–ª–∏—á–Ω–∞ –æ—Ç –ø–µ—Ä–µ–º–µ–Ω–Ω–æ–π for-–æ–ø–µ—Ä–∞—Ç–æ—Ä–∞.");
     stk.pop();
 }
 
@@ -953,7 +953,7 @@ void SyntaxAnalyzer::r() {
 void SyntaxAnalyzer::showStk() {
     stack<int> stk2;
     int k;
-    cout << endl << "—Ó‰ÂÊËÏÓÂ ÒÚÂÍ‡:";
+    cout << endl << "–°–æ–¥–µ—Ä–∂–∏–º–æ–µ —Å—Ç–µ–∫–∞:";
     while (!stk.empty()) {
         k = stk.top();
         cout << endl << k;
