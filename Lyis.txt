@@ -1,0 +1,19 @@
+10 отладочная программа для синтаксического блока
+20
+30 let x = 10 * 5
+40 gosub 60
+50 gosub 70
+60 return
+70 if x = 0 goto 80
+80 for x = 0 to 10
+90 for y = x to 20 step 2
+100 next y
+110 next x
+120 let a = x ^ 2 ^ 3 * y * 5 + y * ( - z ^ 2 + 3 )
+130 let b = a ^ 2 / x / 7.1 - ( ( 3 + x + a) )
+140 let c = b - c - ( + y / 2 ^ 3 + 5 ) ^ 2 - 4 * x ^ 2 - 1
+150 let d = 3 * a * b ^ ( c ^ b - 1 ) * x / y + 1
+160 let e = a / b ^ c / 2 - a ^ 3 ^ 4 / y * b - 6
+170 let f = 37 ^ ( a ^ b - c * a ^ 4 ^ 5 * d ) + 3
+180 end
+  
