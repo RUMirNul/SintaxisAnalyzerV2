@@ -1,5 +1,6 @@
 #include <stack>
 #include "LexicalAnalyzer.h"
+////рнкэйн дкъ йндхпнбйх // сдюкхрэ
 using namespace std;
 class SyntaxAnalyzer : public LexicalAnalyzer {
 private:

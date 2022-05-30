@@ -32,7 +32,7 @@ int main() {
         cout << "Такого варианта нет!\n";
         return 1;
     }
-    //test
+    //ТОЛЬКО ДЛЯ КОДИРОВКИ // УДАЛИТЬ
     int n = str.length();
     char* name = &str[0];
     gen.Start(name);
